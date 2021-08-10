@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main id="main">
+      <header id="about">
+        <h1 id="title">Are you satisfied with us?</h1>
+        <p id="description">Your opinion matters!</p>
+      </header>
+
+      <div id="main-content">
+        <form action="" id="survey-form">
+          <div class="form-input">
+            <label id="name-label" for="name">Name</label>
+            <input
+              class="style-imp"
+              id="name"
+              type="text"
+              placeholder="Your Name"
+              required
+            />
+            <label id="email-label" for="email">Email</label>
+            <input
+              class="style-imp"
+              id="email"
+              type="email"
+              placeholder="Your Email"
+              required
+            />
+            <label id="number-label" for="number"
+              >Age <span>(optional)</span></label
+            >
+            <input
+              id="number"
+              type="number"
+              placeholder="Your Number"
+              min="10"
+              max="88"
+              class="style-imp"
+              required
+            />
+          </div>
+          <div class="form-dropdown">
+            <p>What do you like most?</p>
+            <select name="role" id="dropdown" required>
+              <option disabled selected vlue>Select one option</option>
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+          </div>
+
+          <div class="form-radio">
+            <p>Would you recommend us to friend or a family member?</p>
+            <label>
+              <input type="radio" name="recommendation" valuue="definitely" />
+              Definitely
+            </label>
+
+            <label>
+              <input type="radio" name="recommendation" valuue="maybe" />
+              Maybe
+            </label>
+
+            <label>
+              <input type="radio" name="recommendation" valuue="not-sure" />
+              Not Sure
+            </label>
+          </div>
+
+          <div class="form-check">
+            <p>
+              What would you like to see improved?
+              <span>(Check all that apply)</span>
+            </p>
+
+            <label>
+              <input type="checkbox" name="prefer" value="simple1" />
+              Simple - 1
+            </label>
+
+            <label>
+              <input type="checkbox" name="prefer" value="simple2" />
+              Simple - 2
+            </label>
+
+            <label>
+              <input type="checkbox" name="prefer" value="simple3" />
+              Simple - 3
+            </label>
+
+            <label>
+              <input type="checkbox" name="prefer" value="simple4" />
+              Simple - 4
+            </label>
+
+            <label>
+              <input type="checkbox" name="prefer" value="simple5" />
+              Simple - 5
+            </label>
+
+            <label>
+              <input type="checkbox" name="prefer" value="simple6" />
+              Simple - 6
+            </label>
+          </div>
+
+          <div class="form-comment">
+            <p>Any comments or sugestion?</p>
+            <textarea
+              name="commetns-sugestion"
+              id="comments"
+              cols="70"
+              rows="5"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+
+          <button type="submit" value="Submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
